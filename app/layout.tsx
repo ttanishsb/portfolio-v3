@@ -15,7 +15,7 @@ const vercettiFont = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com/'),
-  title: "Tanish Singh Bisht ✌️",
+  title: "tsbporfolio <3",
   description: "Class XII student, aspiring AI/ML specialist, curious at heart.",
   keywords: "Tanish Singh Bisht, AI/ML, Machine Learning, Python Developer, Student Programmer, Prompt Design, Web Development, JavaScript, Portfolio",
   authors: [{ name: "Tanish Singh Bisht" }],
