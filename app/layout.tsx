@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     "Student Programmer",
     "Web Development",
     "Technology",
-		"xsxsxsxs"
+		";m0Ww~J6q33!"
   ],
 
   authors: [{ name: "Tanish Singh Bisht" }],
