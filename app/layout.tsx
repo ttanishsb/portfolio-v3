@@ -2,7 +2,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata, Viewport } from "next";
 import localFont from 'next/font/local';
 import "./globals.css";
-
+<meta name="google-site-verification" content="prSG7Nlia4OdwfkBCwSFbT9iA-5U3pZEaOxUbqahBuA" />
 const soriaFont = localFont({
   src: "../public/soria-font.ttf",
   variable: "--font-soria",
