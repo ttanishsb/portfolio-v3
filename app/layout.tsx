@@ -18,23 +18,32 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_SITE_URL || "https://tsbportfolio.vercel.app/"
   ),
 
+  title: "Tanish Singh Bisht | Portfolio",
+
+  description:
+    "Tanish Singh Bisht is a Class XII student and aspiring AI/ML specialist interested in artificial intelligence, machine learning, software development, and creative technology.",
+
+  keywords: [
+    "Tanish Singh Bisht",
+    "Tanish Singh Bisht portfolio",
+    "AI/ML",
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Python",
+    "Software Development",
+    "Student Programmer",
+    "Web Development",
+    "Technology",
+		"xsxsxsxs"
+  ],
+
+  authors: [{ name: "Tanish Singh Bisht" }],
+  creator: "Tanish Singh Bisht",
+  publisher: "Tanish Singh Bisht",
+
   verification: {
     google: "prSG7Nlia4OdwfkBCwSFbT9iA-5U3pZEaOxUbqahBuA",
   },
-
-  title: "tsbporfolio <3",
-
-  description:
-    "Class XII student, aspiring AI/ML specialist, curious at heart.",
-
-  keywords:
-    "Tanish Singh Bisht, AI/ML, Machine Learning, Python Developer, Student Programmer, Prompt Design, Web Development, JavaScript, Portfolio",
-
-  authors: [{ name: "Tanish Singh Bisht" }],
-
-  creator: "Tanish Singh Bisht",
-
-  publisher: "Tanish Singh Bisht",
 
   formatDetection: {
     email: false,
@@ -54,19 +63,20 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Tanish Singh Bisht - Aspiring AI/ML Specialist",
+    title: "Tanish Singh Bisht | Portfolio",
     description:
-      "Class XII student exploring AI/ML, prompt design, and software development.",
-    siteName: "Tanish Singh Bisht's Portfolio",
+      "Class XII student and aspiring AI/ML specialist exploring artificial intelligence, machine learning, software development, and creative technology.",
+    siteName: "Tanish Singh Bisht | Portfolio",
     locale: "en_US",
     type: "website",
+    url: "https://tsbportfolio.vercel.app/",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Tanish Singh Bisht - Aspiring AI/ML Specialist",
+    title: "Tanish Singh Bisht | Portfolio",
     description:
-      "Class XII student exploring AI/ML, prompt design, and software development.",
+      "Class XII student and aspiring AI/ML specialist exploring AI, machine learning, software development, and creative technology.",
   },
 };
 
@@ -89,6 +99,21 @@ export default function RootLayout({
       >
         {children}
       </body>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            name: "Tanish Singh Bisht",
+            url: "https://tsbportfolio.vercel.app/",
+            jobTitle: "Student and Aspiring AI/ML Specialist",
+            description:
+              "Tanish Singh Bisht is a Class XII student and aspiring AI/ML specialist interested in artificial intelligence, machine learning, software development, and creative technology.",
+          }),
+        }}
+      />
 
       <GoogleAnalytics
         gaId={process.env.NEXT_PUBLIC_GA_ID || ""}
