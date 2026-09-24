@@ -1,8 +1,8 @@
 import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata, Viewport } from "next";
-import localFont from 'next/font/local';
+import localFont from "next/font/local";
 import "./globals.css";
-<meta name="google-site-verification" content="prSG7Nlia4OdwfkBCwSFbT9iA-5U3pZEaOxUbqahBuA" />
+
 const soriaFont = localFont({
   src: "../public/soria-font.ttf",
   variable: "--font-soria",
@@ -14,39 +14,59 @@ const vercettiFont = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com/'),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "https://tsbportfolio.vercel.app/"
+  ),
+
+  verification: {
+    google: "prSG7Nlia4OdwfkBCwSFbT9iA-5U3pZEaOxUbqahBuA",
+  },
+
   title: "tsbporfolio <3",
-  description: "Class XII student, aspiring AI/ML specialist, curious at heart.",
-  keywords: "Tanish Singh Bisht, AI/ML, Machine Learning, Python Developer, Student Programmer, Prompt Design, Web Development, JavaScript, Portfolio",
+
+  description:
+    "Class XII student, aspiring AI/ML specialist, curious at heart.",
+
+  keywords:
+    "Tanish Singh Bisht, AI/ML, Machine Learning, Python Developer, Student Programmer, Prompt Design, Web Development, JavaScript, Portfolio",
+
   authors: [{ name: "Tanish Singh Bisht" }],
+
   creator: "Tanish Singh Bisht",
+
   publisher: "Tanish Singh Bisht",
+
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
+
   robots: {
     index: true,
     follow: true,
     googleBot: {
       index: true,
       follow: true,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
+
   openGraph: {
     title: "Tanish Singh Bisht - Aspiring AI/ML Specialist",
-    description: "Class XII student exploring AI/ML, prompt design, and software development.",
+    description:
+      "Class XII student exploring AI/ML, prompt design, and software development.",
     siteName: "Tanish Singh Bisht's Portfolio",
     locale: "en_US",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Tanish Singh Bisht - Aspiring AI/ML Specialist",
-    description: "Class XII student exploring AI/ML, prompt design, and software development.",
+    description:
+      "Class XII student exploring AI/ML, prompt design, and software development.",
   },
 };
 
@@ -69,7 +89,10 @@ export default function RootLayout({
       >
         {children}
       </body>
-      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ''}/>
+
+      <GoogleAnalytics
+        gaId={process.env.NEXT_PUBLIC_GA_ID || ""}
+      />
     </html>
   );
 }
